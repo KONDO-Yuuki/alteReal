@@ -1,6 +1,6 @@
 {
   "name": "altereal",
-  "main": "index.html",
+  "main": "index.js",
   "js-flags": "--expose-gc",
   "window": {
     "title": "",
@@ -10,6 +10,7 @@
     "icon": "icon/icon.png"
   },
   "scripts": {
+    "start": "node ./index.js",
     "format": "prettier --write **/*.js **/*.json",
     "prettier-watch": "onchange '**/*.js' '**/*.json' -- prettier --write {{changed}}"
   },
@@ -29,5 +30,8 @@
     "lint-staged": "^8.1.7",
     "onchange": "^6.0.0",
     "prettier": "^1.17.1"
+  },
+  "dependencies": {
+    "express": "^4.17.0"
   }
 }
